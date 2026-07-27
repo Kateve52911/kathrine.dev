@@ -1,26 +1,32 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import Link from "next/link";
+import { Inter, Playfair_Display } from "next/font/google";
+import Header from "@/components/ui/Header";
+
 
 export const metadata: Metadata = {
     title: 'Kathrine.dev',
     description: 'My personal website',
 };
 
-export default function RootLayout({
-                                     children,
-                                   }: {
-  children: React.ReactNode
-}) {
-  return (
-      <html lang="en">
-      <body>
-      <header>
-          <nav>
-              <Link href="/">Home</Link> | <Link href="/projects">Projects</Link>
-          </nav>
-      </header>
-      <main>{children}</main></body>
-      </html>
-  )
+
+const inter = Inter({
+    subsets: ["latin"],
+    variable: "--font-inter",
+});
+
+const playfair = Playfair_Display({
+    subsets: ["latin"],
+    variable: "--font-playfair",
+});
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+    return (
+        <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+        <body>
+        <Header />
+        <main>{children}</main>
+        </body>
+        </html>
+    );
 }
