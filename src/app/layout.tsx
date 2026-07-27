@@ -1,3 +1,12 @@
+import type { Metadata } from 'next';
+import './globals.css';
+import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: 'Kathrine.dev',
+    description: 'My personal website',
+};
+
 export default function RootLayout({
                                      children,
                                    }: {
@@ -5,7 +14,13 @@ export default function RootLayout({
 }) {
   return (
       <html lang="en">
-      <body>{children}</body>
+      <body>
+      <header>
+          <nav>
+              <Link href="/">Home</Link> | <Link href="/projects">Projects</Link>
+          </nav>
+      </header>
+      <main>{children}</main></body>
       </html>
   )
 }
