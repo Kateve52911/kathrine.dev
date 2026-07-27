@@ -9,7 +9,7 @@ export default function Header() {
         <div className="flex p2 content-end items-end justify-between px-6 py-4">
             <div>
 
-                <Link href="/" className="font-logo text-5xl">Kathrine.dev</Link>
+                <Link href="/" className="font-logo text-3xl">Kathrine.dev</Link>
             </div>
             <div className="flex content-end gap-4">
                 <Link href="/about" className={` ${pathname === '/about'? 'font-bold' : 'hover:border-b-2 border-plum'}`}>About</Link>
