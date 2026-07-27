@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 export default function Header() {
     const pathname = usePathname()
     return (
-        <div className="flex p2 content-end items-end justify-between px-6 py-4">
+        <div className="flex p2 content-end items-end justify-between">
             <div>
 
                 <Link href="/" className="font-logo text-3xl">Kathrine.dev</Link>

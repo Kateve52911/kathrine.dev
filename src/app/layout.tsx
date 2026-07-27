@@ -3,6 +3,7 @@ import './globals.css';
 import { Inter, Playfair_Display } from "next/font/google";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import Hero from "@/components/ui/Hero";
 
 
 export const metadata: Metadata = {
@@ -25,10 +26,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
         <body>
-        <div className="flex flex-col h-screen w-screen">
+        <div className="flex flex-col h-screen w-screen px-6 py-6">
             <Header />
-            <main>{children}</main>
-            <Footer /></div>
+            <div className={`px-10`}>
+                <Hero />
+                <main>{children}</main>
+            </div>
+            <Footer />
+        </div>
         </body>
         </html>
     );
