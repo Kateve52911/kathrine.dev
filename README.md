@@ -10,19 +10,19 @@ This portfolio brings together my CV, skills, and project work in one continuous
 
 ## Features
 
-- **Fixed header navigation** — jumps to each section on the page via anchor links, rather than separate routes
-- **Alternating vertical timeline** — displays work experience and education chronologically, with distinct styling per entry type
-- **Categorized skills section** — languages, frameworks, libraries, tools, and key competencies, grouped and displayed as a responsive grid
-- **Projects section** — cards linking out to live demos and GitHub repositories
+- **Fixed header navigation:** jumps to each section on the page via anchor links, rather than separate routes
+- **Alternating vertical timeline:** displays work experience and education chronologically, with distinct styling per entry type
+- **Categorized skills section:** languages, frameworks, libraries, tools, and key competencies, grouped and displayed as a responsive grid
+- **Projects section:** cards linking out to live demos and GitHub repositories
 - Built fully typed with TypeScript, with reusable, data-driven components
 
 ## Tech Stack
 
-- **Framework:** Next.js, React
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **UI components:** shadcn/ui
-- **Icons:** Lucide
+- **Languages:** JavaScript/TypeScript, HTML, CSS
+- **Frameworks:** Next.js, React, Tailwind CSS
+- **Libraries:** shadcn/ui, Lucide
+- **Tools:** Git, GitHub Actions, Figma
+- **Code quality:** ESLint, Prettier
 
 ## Project Structure
 
@@ -56,8 +56,8 @@ src/
 ### Install
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>
-cd <repo-name>
+git clone https://github.com/Kateve52911/kathrine.dev.git
+cd kathrine.dev
 npm install
 ```
 
@@ -68,9 +68,3 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Contact
-
-- **LinkedIn:** <!-- your LinkedIn URL -->
-- **GitHub:** <!-- your GitHub URL -->
-- **Email:** kathrine.evensen@proton.me
