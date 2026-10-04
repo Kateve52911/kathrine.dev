@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kathrine.dev
+
+My personal portfolio site — a single-page site built to showcase my background, skills, and projects as I transition from teaching into frontend development.
+
+**Live site:** [kathrine.dev](https://kathrine.dev.vercel.app) <!-- update with actual URL -->
+
+## About
+
+This portfolio brings together my CV, skills, and project work in one continuously scrolling page, with a fixed header for quick navigation between sections. The CV section is presented as a vertical, alternating timeline covering both my teaching experience and my education.
+
+## Features
+
+- **Fixed header navigation** — jumps to each section on the page via anchor links, rather than separate routes
+- **Alternating vertical timeline** — displays work experience and education chronologically, with distinct styling per entry type
+- **Categorized skills section** — languages, frameworks, libraries, tools, and key competencies, grouped and displayed as a responsive grid
+- **Projects section** — cards linking out to live demos and GitHub repositories
+- Built fully typed with TypeScript, with reusable, data-driven components
+
+## Tech Stack
+
+- **Framework:** Next.js, React
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI components:** shadcn/ui
+- **Icons:** Lucide
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx          # Root layout: header, footer, fonts
+│   ├── page.tsx            # Homepage — assembles all sections
+│   └── globals.css
+├── components/
+│   ├── sections/            # About, Skills, Projects section wrappers
+│   ├── timeline/             # Timeline, TimelineRow, TimelineCard
+│   ├── projects/             # ProjectCard, ProjectList
+│   └── ui/                   # shadcn primitives, Header, Footer, Hero
+├── data/
+│   ├── professionalJourney.ts  # Experience + education timeline data
+│   ├── skills.ts                # Categorized skills data
+│   └── projects.ts
+├── schemas/                  # Shared TypeScript types
+└── lib/
+    └── utils.ts
+```
 
 ## Getting Started
 
-First, run the development server:
+### Requirements
+
+- Node.js (version 18 or higher)
+- npm
+
+### Install
+
+```bash
+git clone https://github.com/<your-username>/<repo-name>
+cd <repo-name>
+npm install
+```
+
+### Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contact
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **LinkedIn:** <!-- your LinkedIn URL -->
+- **GitHub:** <!-- your GitHub URL -->
+- **Email:** kathrine.evensen@proton.me

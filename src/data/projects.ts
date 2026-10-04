@@ -3,7 +3,7 @@ import { Project } from '@/schemas/project';
 export const projects: Project[] = [
   {
     title: 'Bidly',
-    image: 'images/single-listing.png',
+    image: 'images/Single-listing.png',
     description:
       'An interactive and responsive auction platform built with HTML, Bootstrap, and Vanilla TypeScript. It features dynamic content loading through API integration, demonstrating proficiency in asynchronous programming, real-time bid management, and error handling. The platform includes full authentication, listing creation, and a bidding system, showcasing seamless navigation and intuitive UI/UX design.',
     github: 'https://github.com/Kateve52911/bidly',
