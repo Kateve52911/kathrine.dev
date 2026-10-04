@@ -1,36 +1,19 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
 export default function Header() {
-  const pathname = usePathname();
   return (
-    <div className="flex p2 content-end items-end justify-between">
+    <div className="flex p-4 content-end items-end justify-between bg-bg fixed top-0 left-0 right-0 z-50">
       <div>
         <Link href="/" className="font-logo text-3xl">
           Kathrine.dev
         </Link>
       </div>
       <div className="flex content-end gap-4">
-        <Link
-          href="/about"
-          className={` ${pathname === '/about' ? 'font-bold' : 'hover:border-b-2 border-plum'}`}
-        >
-          About
-        </Link>
-        <Link
-          href="/projects"
-          className={` ${pathname === '/projects' ? 'font-bold' : 'hover:border-b-2 border-plum'}`}
-        >
-          Projects
-        </Link>
-        <Link
-          href="/contact"
-          className={` ${pathname === '/contact' ? 'font-bold' : 'hover:border-b-2 border-plum'}`}
-        >
-          Contact
-        </Link>
+        <Link href="#projects">Projects</Link>
+        <Link href="#about">About</Link>
+        <Link href="#timeline">CV</Link>
       </div>
     </div>
   );

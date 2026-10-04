@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { Inter, Playfair_Display } from 'next/font/google';
+import { Inter, Playfair_Display, Figtree } from 'next/font/google';
 import Header from '@/components/ui/Header';
 import Footer from '@/components/ui/Footer';
-import Hero from '@/components/ui/Hero';
+
+import { cn } from '@/lib/utils';
+
+const figtree = Figtree({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
   title: 'Kathrine.dev',
@@ -26,12 +29,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html
+      lang="en"
+      className={cn(
+        inter.variable,
+        playfair.variable,
+        'font-sans',
+        figtree.variable
+      )}
+    >
       <body>
-        <div className="flex flex-col h-screen w-screen px-6 py-6">
+        <div className="flex flex-col min-h-screen w-screen px-6 py-6">
           <Header />
-          <div className={`px-10`}>
-            <Hero />
+          <div className={`px-10 flex-1`}>
             <main>{children}</main>
           </div>
           <Footer />
