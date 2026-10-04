@@ -2,7 +2,7 @@
 
 My personal portfolio site — a single-page site built to showcase my background, skills, and projects as I transition from teaching into frontend development.
 
-**Live site:** [kathrine.dev](https://kathrine.dev.vercel.app) <!-- update with actual URL -->
+**Live site:** [kathrine.dev](https://kathrine-dev.vercel.app) <!-- update with actual URL -->
 
 ## About
 
